@@ -10,7 +10,7 @@ const nodemailer = require("nodemailer");
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'jhak01059@gmail.com', // generated ethereal user
+      user: 'abcd@gmail.com', // generated ethereal user
       pass: "tebefvsshaoindms", // generated ethereal password
     },
   });
@@ -48,7 +48,7 @@ const nodemailer = require("nodemailer");
 
   // send mail with defined transport object
   let info =  await transporter.sendMail({
-    from: '"Bill-SplitUp👻" <jhak01059@gmail.com>', // sender address
+    from: '"Bill-SplitUp👻" <abcd@gmail.com>', // sender address
     to: data.email, // list of receivers
     subject: osubject, // Subject line
      // plain text body
