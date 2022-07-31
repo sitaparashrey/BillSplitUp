@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+</head>
+<body>
+    <div class="container" style="padding:30px;margin:20px">
+      <h1>Welcome To Bill Split-Up</h1>
+      <h3>Reset Password</h3>
+       <form >
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required/>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="newpassword" name="password" required/>
+        </div> 
+        <div>
+            <label for="password">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="password" required/>
+          </div> 
+        
+          <input type="submit" name="submit" id="resetPasswordClickEvt" value="Reset Password">
+       </form> 
+    </div>
+    <script type="text/javascript">
+        var resetPasswordClickEvt = document.getElementById('resetPasswordClickEvt');
+
+        resetPasswordClickEvt.addEventListener('click', resetPasswordClicked);
+
+        function resetPasswordClicked(event) {
+            event.preventDefault();
+            var link=location.href;
+            var token = document.location.href.split('resetpassword/')[1];
+            var data = "password=" + document.getElementById('newpassword').value + '&confirmPassword=' + document.getElementById('confirmPassword').value + '&token=' + token;
+            ajaxCall(data, "http://localhost:3000/auth/reset", function(status, response) {
+                if (status == 200) {
+                    alert('successfully sent');
+                } else {
+                    alert('Error', status)
+                }
+            });
+        }
+
+        function ajaxCall(data, url, callback) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", url, true);
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    return callback(this.status, JSON.parse(xhttp.response));
+                }
+            }
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send(data);
+        }
+    </script>
+</body>
+</html>

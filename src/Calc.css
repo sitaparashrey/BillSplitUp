@@ -1,0 +1,16 @@
+.container
+{
+    display: flex;
+}
+
+
+.card
+{
+    width:25%;
+    height:250px;
+    padding: 20px;
+    margin:15px;
+    border:olivedrab;
+    border-width: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}

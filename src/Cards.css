@@ -1,0 +1,42 @@
+/* .container{
+    box-sizing: border-box;
+} */
+.info{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.card{
+    width:25%;
+    height:250px;
+    margin:15px;
+    border:olivedrab;
+    border-width: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+ /* .info i { transition: opacity .2s;}
+ .info i:hover { opacity: .5; }
+.card > div{
+    background-color: rgba(30, 30, 30, .7);
+    transform: translateX(-100%);
+    transition: transform .35s; 
+} */
+
+/* .card:hover > div { transform : translateX(0)}; */
+.content{
+    padding: 2px 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header{
+    height: 30%;
+    padding-top: 15px;
+}
+
+.data{
+    align-items: center;
+    height: 30%;  
+}
