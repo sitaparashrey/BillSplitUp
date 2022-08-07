@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {Button, Container,Row,Col,Form,Card} from 'react-bootstrap';
-import logo from '.\\images\\Split-up.svg';
+import logo from './Split-up.svg';
 import Header from './Homeheader.js';
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
