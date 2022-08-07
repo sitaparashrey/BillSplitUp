@@ -1,7 +1,7 @@
 import {Button, Container,Nav,Navbar} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import logo from './plit-up.svg';
+import logo from './Split-up.svg';
 
 function Header()
 {
