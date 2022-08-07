@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import {Button, Container,Nav,Navbar} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios';
-import logo from 'D:\\My Web Sites\\React\\Splitup\\src\\images\\Split-up.svg';
+import logo from '..\\images\\Split-up.svg';
 
 function Header()
 {
