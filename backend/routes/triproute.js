@@ -91,27 +91,8 @@ router.route('/update/details/:id').put((req,res)=>{
         );
             console.log(x);
             data.push(newDetail);
-            console.log(data)
-            // Trip.findByIdAndUpdate(query,{details:newDetail},(error,data)=>{
-            //     if(error)
-            //     {
-            //         console.log("ERROR "+ error);
-            //     }else
-            //     {
-            //         res.json(data);
-            //     }
-            // }),
-        // console.log(data);
+            console.log(data)x    
     });
-    // Trip.findByIdAndUpdate(query,{details:data},(error,data)=>{
-        //         if(error)
-        //         {
-        //             console.log("ERROR "+ error);
-        //         }else
-        //         {
-        //             res.json(data);
-        //         }
-        //     })
     
 });
 
